@@ -1,9 +1,13 @@
 const assert = require('assert');
+const {expect} = require('chai');
+
 const {sum, mult, isAdult, sortArrayUp, isPalindrome, isOddNumber, isEvenNumber} = require('../index.js');
 
 describe('function sum', () => {
     it('should function sum equals 10', () => {
         assert.equal(sum(2, 4), 6);
+        expect(sum(2,4)).to.equal(6);
+        //expect(sum(2,4)).eq(6);
     });
 
     it('should function sum not equals 0', () => {
@@ -30,6 +34,7 @@ describe('function isPalindrome', () => {
 describe('function isAdult', () => {
     it('should return true if argument equals 21', () => {
         assert.equal(isAdult(21), true);
+        expect(isAdult)
     });
     it('should return true if argument is more than 21', () => {
         assert.equal(isAdult(22), true);
