@@ -33,8 +33,8 @@ describe('function isPalindrome', () => {
 
 describe('function isAdult', () => {
     it('should return true if argument equals 21', () => {
-        assert.equal(isAdult(21), true);
-        expect(isAdult)
+        //assert.equal(isAdult(21), true);
+        expect(isAdult(21)).to.be.true;
     });
     it('should return true if argument is more than 21', () => {
         assert.equal(isAdult(22), true);
@@ -47,6 +47,8 @@ describe('function isAdult', () => {
     });
     it('should return undefined if argument is less than 0', () => {
         assert.equal(isAdult(-10), undefined);
+
+
     });
 });
 describe('function sortArrayUp', () => {
